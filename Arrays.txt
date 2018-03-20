@@ -1,0 +1,20 @@
+Arrays
+
+- Arrays are objects which can store collection of same type of elements
+- An array has a certain number of elements in a fixed order
+- Arrays are objects,and are created on the heap, not the stack
+- Big-O Complexity of operations Access Θ(1), Search Θ(n), Insertion Θ(n), Deletion Θ(n).
+-- 'n' represents no. of elements in array. And it means search operation is  
+--- slow as we need to iterate all elements in array to search for one specific element
+- Arrays are static, which means that we cannot change the size of array once created.
+- We always subtract -1 from array length to point to the last index location.
+
+JAVA EXAMPLE
+dataType[] arrayRefVariable = new dataType[arraySize];
+
+GOLANG EXAMPLE
+var myArray [3]int 
+myArray := [3]int{1,2,3}
+
+PYTHON EXAMPLE
+myArray = [1,2,3]
