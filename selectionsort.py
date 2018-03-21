@@ -18,6 +18,13 @@ It sorts an array by repeatedly finding the minimum/maximum element from unsorte
 and putting it at the end.
 In selection sort, the inner loop finds the next smallest (or largest) value and the outer 
 loop places that value into its proper location.
+Selection sort should never be used. it does not adapt to the data in any way.
+
+What is performance of selection sort in Big'O?
+Worst-case performance	О(n2)
+Best-case performance	О(n2)
+Average performance	О(n2)
+Worst-case space Complexity	О(n) total, O(1) auxiliary
 
 '''
 
@@ -26,6 +33,7 @@ def selection_sort(unsorted_arr):
         # store current position
         n = x
         # search for the position of the next smallest value
+        #   in the unsorted part
         for y in range(x+1, len(unsorted_arr)):
             if unsorted_arr[y] < unsorted_arr[n]:
                 n = y
